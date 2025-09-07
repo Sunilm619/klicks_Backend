@@ -10,8 +10,8 @@ app.use(
 const cookieparser = require("cookie-parser");
 app.use(express.json());
 app.use(cookieparser());
-const authroute = require("../backend/routes/auth");
-const connectDB = require("../backend/Database/connectDb");
+const authroute = require("../routes/auth");
+const connectDB = require("../Database/connectDb");
 
 connectDB()
   .then(() => {
